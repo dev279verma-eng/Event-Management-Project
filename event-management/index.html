@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventPro - Premium Event Management System</title>
+    <meta
+      name="description"
+      content="Professional event management system for all your celebrations"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .landing-hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        padding: 2rem;
+      }
+
+      .landing-content {
+        max-width: 900px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .landing-logo {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-top: 5rem;
+        padding: 4rem 2rem;
+      }
+
+      .feature-card {
+        text-align: center;
+        padding: 2.5rem 2rem;
+      }
+
+      .feature-icon {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .feature-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin: 4rem 0;
+        flex-wrap: wrap;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 3.5rem;
+        font-weight: 900;
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Playfair Display", serif;
+      }
+
+      .stat-label {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="landing-hero">
+      <div class="landing-content">
+        <div class="landing-logo">🎊</div>
+        <h1 class="hero-title" style="font-size: 5rem">EventPro</h1>
+        <p class="hero-subtitle" style="font-size: 1.5rem; max-width: 700px">
+          Transform your celebrations into unforgettable experiences with our
+          premium event management platform
+        </p>
+
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Event Types</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Customizable</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Possibilities</div>
+          </div>
+        </div>
+
+        <div class="hero-cta" style="margin-top: 3rem">
+          <a
+            href="login.php"
+            class="btn btn-primary"
+            style="font-size: 1.2rem; padding: 1.25rem 3rem"
+          >
+            Sign In
+          </a>
+          <a
+            href="register.php"
+            class="btn btn-accent"
+            style="font-size: 1.2rem; padding: 1.25rem 3rem"
+          >
+            Create Account
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div style="text-align: center; padding: 4rem 2rem 2rem">
+        <h2
+          style="
+            font-family: &quot;Playfair Display&quot;, serif;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+          "
+        >
+          Everything You Need
+        </h2>
+        <p
+          style="
+            color: var(--text-secondary);
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+          "
+        >
+          Powerful features designed to make event planning effortless and
+          enjoyable
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card card">
+          <div class="feature-icon">🎂</div>
+          <h3 class="feature-title">Birthday Parties</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7">
+            Create memorable birthday celebrations with our comprehensive
+            planning tools
+          </p>
+        </div>
+
+        <div class="feature-card card">
+          <div class="feature-icon">💒</div>
+          <h3 class="feature-title">Weddings</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7">
+            Plan your dream wedding with detailed management and customization
+            options
+          </p>
+        </div>
+
+        <div class="feature-card card">
+          <div class="feature-icon">🏢</div>
+          <h3 class="feature-title">Corporate Events</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7">
+            Organize professional events, conferences, and business meetings
+          </p>
+        </div>
+
+        <div class="feature-card card">
+          <div class="feature-icon">💝</div>
+          <h3 class="feature-title">Anniversaries</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7">
+            Celebrate milestones and special moments with elegant event planning
+          </p>
+        </div>
+
+        <div class="feature-card card">
+          <div class="feature-icon">🎓</div>
+          <h3 class="feature-title">Graduations</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7">
+            Honor achievements with perfectly planned graduation celebrations
+          </p>
+        </div>
+
+        <div class="feature-card card">
+          <div class="feature-icon">🎉</div>
+          <h3 class="feature-title">General Parties</h3>
+          <p style="color: var(--text-secondary); line-height: 1.7">
+            Any occasion deserves celebration - we've got you covered
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center; padding: 4rem 2rem">
+        <h2
+          style="
+            font-family: &quot;Playfair Display&quot;, serif;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+          "
+        >
+          Ready to Get Started?
+        </h2>
+        <a
+          href="register.php"
+          class="btn btn-primary"
+          style="font-size: 1.2rem; padding: 1.25rem 3rem"
+        >
+          Create Your Free Account
+        </a>
+      </div>
+    </section>
+
+    <script>
+      // Parallax effect on scroll
+      window.addEventListener("scroll", function () {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector(".landing-hero");
+        if (hero) {
+          hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+          hero.style.opacity = 1 - scrolled / 800;
+        }
+      });
+
+      // Stagger animation for feature cards
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".feature-card");
+        cards.forEach((card, index) => {
+          card.style.opacity = "0";
+          card.style.animation = `fadeInUp 0.8s ease-out ${0.15 * index}s forwards`;
+        });
+      });
+    </script>
+  </body>
+</html>
